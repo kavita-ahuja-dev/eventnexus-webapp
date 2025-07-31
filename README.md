@@ -1,1 +1,1 @@
-# eventnexus-springboot-api-demo
+# eventnexus-demo
