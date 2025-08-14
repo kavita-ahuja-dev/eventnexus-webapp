@@ -1,29 +1,3 @@
-// import React from 'react';
-// import { Card, Button, Container, Row, Col } from 'react-bootstrap';
-
-// const ExploreEvents = () => {
-//   return (
-//     <Container className="mt-4">
-//       <h2 className="mb-4">Explore Upcoming Events</h2>
-//       <Row>
-//         <Col md={4}>
-//           <Card className="mb-4">
-//             <Card.Body>
-//               <Card.Title>Tech Summit 2025</Card.Title>
-//               <Card.Text>
-//                 Date: 2025-09-01 <br /> Location: Virtual <br /> Type: Tech
-//               </Card.Text>
-//               <Button variant="primary">View Details</Button>
-//             </Card.Body>
-//           </Card>
-//         </Col>
-//       </Row>
-//     </Container>
-//   );
-// };
-
-// export default ExploreEvents;
-
 import React, { useEffect, useState } from 'react';
 import { Card, Button, Container, Row, Col, Spinner, Alert } from 'react-bootstrap';
 import { Link } from "react-router-dom";
@@ -72,7 +46,6 @@ const ExploreEvents = () => {
                 </Button> */}
                 <Button
                         as={Link}
-                       // to={`/api/events/${event.id}`}
                           to={`/events/${event.id}`}
                           variant="primary"
                       >

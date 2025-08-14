@@ -143,7 +143,6 @@ import java.util.stream.Collectors;
 		        offer.setStartDate(dto.getStartDate());
 		        offer.setEndDate(dto.getEndDate());
 
-		        // Optional: update event and exhibitor if needed
 
 		        Offer updated = offerRepository.save(offer);
 		        OfferResponseDto response = modelMapper.map(updated, OfferResponseDto.class);

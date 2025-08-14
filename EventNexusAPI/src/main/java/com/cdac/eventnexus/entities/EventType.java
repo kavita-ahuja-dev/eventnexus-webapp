@@ -27,7 +27,6 @@ public class EventType extends BaseEntity {
 
     private String description;
 
-    //for making unidirectional comment below lines
     @OneToMany(mappedBy = "type", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Event> events;
     

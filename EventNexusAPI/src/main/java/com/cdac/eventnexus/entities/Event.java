@@ -34,8 +34,7 @@ import jakarta.persistence.UniqueConstraint;
 @Getter
 @Setter
 //@ToString(exclude = {"offers", "feedbacks", "image", "exhibitor", "type"})
-@ToString(exclude = {"exhibitor", "type","feedbacks","image"}) // offers, feedbacks, image are commented
-
+@ToString(exclude = {"exhibitor", "type","feedbacks","image"}) 
 public class Event extends BaseEntity {
     @Column(nullable = false)
     private String title;
@@ -86,28 +85,11 @@ public class Event extends BaseEntity {
     private User exhibitor;
 
 
-    
-
-//    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, orphanRemoval = true)
-//    private List<Offer> offers;
-
     //uncommented on 10-08-2025
     @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Feedback> feedbacks;
 
-    
-//    /**
-//     * each Event has exactly one EventImage
-//     * FK will in the event_images table (event_id), and is unique.
-//     */
-//    @OneToOne(fetch = FetchType.LAZY,
-//              cascade = CascadeType.ALL,
-//              orphanRemoval = true)
-//    @JoinColumn(name = "event_id",      // FK column in event_images
-//                referencedColumnName = "id",
-//                nullable = false,
-//                unique = true)         // enforce one to one
-//    private EventImage image;
+   
     
     @OneToOne(mappedBy = "event", cascade = CascadeType.ALL, orphanRemoval = true)
     private EventImage image;

@@ -30,10 +30,6 @@ const Register = () => {
       setSuccess('Registration successful! You can now log in.');
       setTimeout(() => navigate('/login'), 1500);
     } 
-    // catch (err) {
-    //   setError(err.response?.data?.message || 'Registration failed.');
-    //   console.log(err.response.data);
-    // }
       catch (err) {
         const serverMsg = err?.response?.data?.message || 'Registration failed.';
         setError(serverMsg);

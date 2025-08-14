@@ -20,8 +20,6 @@ import lombok.ToString;
 @Table(
     name = "users",
     uniqueConstraints = {
-//        @UniqueConstraint(columnNames = "username"),
-//        @UniqueConstraint(columnNames = "email")
     	  @UniqueConstraint(name = "uk_users_username", columnNames = "username"),
     	  @UniqueConstraint(name = "uk_users_email", columnNames = "email"),
 
@@ -52,9 +50,6 @@ public class User extends BaseEntity {
     private String password;
 
     @NotNull(message = "User role must not be null. Valid values: ADMIN, CUSTOMER, EXHIBITOR")
-//    @Enumerated(EnumType.STRING)
-//    @Column(name = "role", nullable = false)
-//    private String role;
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private UserRole role;

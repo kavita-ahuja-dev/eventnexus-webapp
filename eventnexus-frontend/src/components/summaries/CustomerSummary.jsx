@@ -1,26 +1,3 @@
-// import React from 'react';
-// import StatCard from '../StatCard';
-
-// const CustomerSummary = () => {
-//   const stats = [
-//     { label: 'Events Registered', value: 5 },
-//     { label: 'Feedback Submitted', value: 12 },
-//     { label: 'Favorite Categories', value: 3 },
-//   ];
-
-//   return (
-//     <div className="p-6 bg-white shadow-md rounded-md">
-//       <h3 className="text-xl font-semibold mb-4">Customer Summary</h3>
-//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-//         {stats.map((stat, index) => (
-//           <StatCard key={index} label={stat.label} value={stat.value} />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default CustomerSummary;
 import { useEffect, useState } from "react";
 import axios from "axios";
 

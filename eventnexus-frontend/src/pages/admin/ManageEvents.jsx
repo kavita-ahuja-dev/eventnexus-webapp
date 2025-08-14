@@ -1,20 +1,6 @@
-// import React from 'react';
 
-// const ManageEvents = () => {
-//   return (
-//     <div className="card p-4 mb-4">
-//       <h2 className="h5 fw-bold mb-3">Manage Events</h2>
-//       {}
-//       <p className="text-muted">Coming soon: List of events, edit/delete actions.</p>
-//     </div>
-//   );
-// };
-
-// export default ManageEvents;
-// src/pages/admin/ManageEvents.jsx
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-// import api from "../../api/axios";
 import axios from 'axios';
 
 const API_BASE = 'http://localhost:8080';
@@ -46,7 +32,6 @@ const ManageEvents = () => {
   const deleteEvent = async (id) => {
     if (!window.confirm("Delete this event?")) return;
     try {
-     // await api.delete(`/api/events/${id}`);
       await axios.delete(`${API_BASE}/api/events/${id}`)
 
       setEvents((list) => list.filter((e) => e.id !== id));

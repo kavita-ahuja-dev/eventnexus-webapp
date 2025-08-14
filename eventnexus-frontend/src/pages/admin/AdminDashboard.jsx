@@ -1,6 +1,4 @@
-// src/pages/AdminDashboard.jsx
 import React from 'react';
-//import AdminSummary from './admin/AdminSummary';
 import AdminSummary from '../../components/summaries/AdminSummary';
 
 import { Link } from 'react-router-dom';

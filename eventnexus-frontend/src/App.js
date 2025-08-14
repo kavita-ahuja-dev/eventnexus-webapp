@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 import LoginPage from './pages/LoginPage';
-// import Register from './pages/Register';
 import Register from './pages/Auth/Register';
 
 import ForgotPassword from './pages/ForgotPassword';
@@ -86,10 +85,7 @@ const App = () => {
           <Route path="/customer/submit-feedback" element={<SubmitFeedback />} />
 
           <Route path="/events/:id" element={<EventDetails />} />
-
-          
-          {/* <Route path="/customer/my-registrations" element={<MyRegistrations />} /> */}
-          {/* <Route path="/customer/my-payments" element={<MyPayments />} /> */}
+            
         </Route>
 
         {/* Fallback Route for unknown paths */}

@@ -223,18 +223,6 @@ useEffect(() => {
           )}
         </Form.Group>
 
-        {/* <Form.Group className="mb-3">
-          <Form.Label>Customer ID</Form.Label>
-          <Form.Control
-            type="number"
-            placeholder="Enter your Customer ID"
-            value={customerId}
-            onChange={(e) => setCustomerId(e.target.value)}
-            required
-            min="1"
-          />
-        </Form.Group> */}
-
         <Form.Group className="mb-3">
           <Form.Label>Payment Mode</Form.Label>
           <Form.Select

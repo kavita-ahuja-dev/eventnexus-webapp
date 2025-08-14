@@ -38,11 +38,6 @@ const MyEvents = () => {
     fetchEvents();
   }, [exhibitorId]);
 
-    //to handle delete page
-    // const handleDelete = (eventId) => {
-    // navigate(`/delte-event/${eventId}`);
-    //  };
-
 // handle delete
   const handleDelete = async (eventId) => {
     const confirmDelete = window.confirm('Are you sure you want to delete this event?');
@@ -85,9 +80,6 @@ const MyEvents = () => {
                   <td>{event.eventTypeName}</td>
                   <td>{event.mode}</td>
                   <td>
-                    {/* <Button variant="warning" size="sm" className="me-2" 
-                    onClick={() => handleEdit(event.id)}>Edit</Button> */}
-
                             <Button
                               variant="warning"
                               size="sm"

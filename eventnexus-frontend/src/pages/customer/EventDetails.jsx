@@ -48,14 +48,6 @@ export default function EventDetails() {
     typeof ev.date === "string" ? ev.date.slice(0, 10) : ev.date ?? "";
 
 
-
-// const normalizeNumber = (v) => {
-//   if (v === null || v === undefined) return null;
-//   const s = String(v).trim().replace(",", "."); // handle "18,5203"
-//   const n = Number.parseFloat(s);
-//   return Number.isNaN(n) ? null : n;
-// };
-
 const normalizeNumber = (v) => {
   if (v === null || v === undefined) return null;
 
@@ -93,8 +85,6 @@ if (
 
   return null;
 })();
-
- // const dateStr = ev.date?.slice ? ev.date.slice(0,10) : ev.date;
 
   return (
     <Container className="mt-4">

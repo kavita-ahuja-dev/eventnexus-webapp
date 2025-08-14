@@ -59,15 +59,6 @@ const MyRegisteredEvents = () => {
         </tr>
       </thead>
       <tbody>
-        {/* {events.map((ev) => (
-          <tr key={ev.registrationId}>
-            <td>{ev.eventTitle}</td>
-            <td>{ev.paymentMode}</td>
-             <td>{ev.paymentDate}</td>
-
-          </tr>
-        ))} */}
-
           {events.map((ev) => (
             <tr key={ev.eventTitle}>
               <td>{ev.eventTitle}</td>

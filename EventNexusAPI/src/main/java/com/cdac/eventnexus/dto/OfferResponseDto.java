@@ -28,22 +28,5 @@ public class OfferResponseDto extends BaseDTO {
     private String exhibitorName;
     private String eventTitle;
 
-   // Getters and setters
-//    public String getExhibitorName() {
-//        return exhibitorName;
-//    }
-//
-//    public void setExhibitorName(String exhibitorName) {
-//        this.exhibitorName = exhibitorName;
-//    }
-//
-//    public String getEventTitle() {
-//        return eventTitle;
-//    }
-//
-//    public void setEventTitle(String eventTitle) {
-//        this.eventTitle = eventTitle;
-//    }
-    
 
 }

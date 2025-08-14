@@ -10,7 +10,7 @@ const ManageUsers = () => {
 
   const loadUsers = async () => {
     try {
-      const res = await api.get('/admin/users'); // adjust path if needed
+      const res = await api.get('/admin/users'); 
       setUsers(res.data);
     } catch (err) {
       console.error('Error fetching users:', err);

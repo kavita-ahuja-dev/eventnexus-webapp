@@ -65,10 +65,7 @@ public class EventServiceImpl implements EventService {
 
 	    	    User exhibitor = userRepository.findById(dto.getExhibitorId())
 	    	        .orElseThrow(() -> new ResourceNotFoundException("Invalid Exhibitor ID"));
-	    	    event.setExhibitor(exhibitor);
-
-	    	    //  DO NOT set EventImage anywhere here
-	    	
+	    	    event.setExhibitor(exhibitor);	    	
 
 	    	    Event saved = eventRepository.save(event);
 	    	    

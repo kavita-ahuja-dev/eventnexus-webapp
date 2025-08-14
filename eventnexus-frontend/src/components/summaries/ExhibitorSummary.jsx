@@ -1,26 +1,3 @@
-// import React from 'react';
-// import StatCard from '../StatCard';
-
-// const ExhibitorSummary = () => {
-//   const stats = [
-//     { label: 'My Events', value: 10 },
-//     { label: 'Offers Created', value: 25 },
-//     { label: 'Feedback Received', value: 40 },
-//   ];
-
-//   return (
-//     <div className="p-6 bg-white shadow-md rounded-md">
-//       <h3 className="text-xl font-semibold mb-4">Exhibitor Summary</h3>
-//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-//         {stats.map((stat, index) => (
-//           <StatCard key={index} label={stat.label} value={stat.value} />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-//export default ExhibitorSummary;
 import { useEffect, useState } from "react";
 import axios from "axios";
 

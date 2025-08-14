@@ -59,10 +59,6 @@ public class GlobalExceptionHandler {
 	}
 	
 	@ExceptionHandler(DuplicateResourceException.class)
-	//public ResponseEntity<String> handleDuplicateResource(DuplicateResourceException ex) {
-	//	        return ResponseEntity
-	//	                .status(HttpStatus.CONFLICT)
-	//	                .body(ex.getMessage());
 		
 	public ResponseEntity<Map<String, Object>> handleDuplicateResource(DuplicateResourceException ex, HttpServletRequest req){ 
 
